@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --pink-light: #C59DD2;
+  --pink-base: #9547A5;
+  --pink-dark: #7D298A;
+  
+  --blue-light: #73B6D2;
+  --blue-base: #358BB9;
+  --blue-mid: #2374A4;
+  --blue-dark: #144A72;
+  --blue-low: #08233C;
+  
+  --shape-stroke: #002347;
+  --shape-hover: #001933;
+  --shape-base: #000F1F;
+  --shape-background: #00050A;
+
+  --text-title: #F8FBFB;
+  --text-body: #E2E7E9;
+  --text-label: #BAC6C9;
+
+
+  --ff-raleway: "Raleway", sans-serif;
+
+  --title-lg: 800 3rem/auto var(--ff-raleway);
+  --title-md: 800 2.5rem/auto var(--ff-raleway); 
+  --title-sm: 800 2rem/auto var(--ff-raleway); 
+  --title-xs: 800 1rem/auto var(--ff-raleway); 
+
+  --subtitle: 500 2rem/2 var(--ff-raleway); 
+
+  --body-lg: 700 1.25rem/1.4 var(--ff-raleway); 
+  --body-md: 700 1rem/1.4 var(--ff-raleway); 
+  --body-sm: 700 0.875rem/1.4 var(--ff-raleway); 
+  --body-xs: 700 0.75rem/1.4 var(--ff-raleway); 
+
+  --button: 800 0.875rem/auto var(--ff-raleway); 
+  --link: 500 0.875rem/auto var(--ff-raleway); 
+  --tag: 800 0.625rem/auto var(--ff-raleway); 
+
+
+}
