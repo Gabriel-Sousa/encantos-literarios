@@ -1,0 +1,92 @@
+.hero{
+  height: 29rem;
+}
+
+.hero{
+  background-image: url(../assets/hero-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+header nav{
+  padding-top: 1.25rem;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li{
+ list-style: none;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.btn-header{
+  padding: 0.75rem 1.25rem;
+  background-color: var(--pink-dark);
+  border-radius: 0.5rem;
+  font: var(--button);
+  color: var(--text-title);
+}
+
+.hero section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.hero section h1{
+  font: var(--title-lg);
+  font-size: 1.75rem;
+  color: var(--text-title);
+  max-width: 20rem;
+  margin-top: 3rem;
+}
+
+.hero section p{
+  font: var(--body-sm);
+  color: var(--text-body);
+  max-width: 20rem;
+}
+
+
+
+@media (width >= 70em){
+
+  .hero{
+    height: 59.25rem;
+    background-size: contain;
+    background-position: top, center;
+  }
+
+  header nav{
+    padding-top: 3.5rem;
+  }
+  
+
+  .hero section{
+    gap: 2rem;
+  }
+  
+  .hero section h1{
+    font: var(--title-lg);
+    max-width: 41rem;
+    margin-top: 5rem;
+  }
+
+  .hero section p{
+    font: var(--body-lg);
+    max-width: 35.5rem;
+  }
+  
+}
