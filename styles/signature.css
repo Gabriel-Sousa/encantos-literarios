@@ -1,0 +1,125 @@
+.signature{
+  margin-top: 12rem;
+  margin-bottom: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  overflow: hidden;
+}
+
+.signature .signature-title h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: var(--title-xs);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-body);
+}
+
+.signature .cards{
+  display: grid;
+  grid-template-columns: repeat(3, 17.5rem);
+  gap: 1rem;
+  overflow-x: scroll;
+  scrollbar-width:  none;
+}
+
+.signature .cards .card {
+  border-radius: 1.5rem;
+  border: 1px solid var(--shape-stroke);
+  background: var(--shape-base);
+  padding: 2rem;
+  height: 25rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.signature .cards .card h3{
+  color: var(--blue-light);
+  font: var(--title-sx);  
+}
+
+.signature .cards .card .price-month{
+  display: flex;
+  align-items: flex-end;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.signature .cards .card .price-month strong{
+  color: var(--text-title);
+  font: var(--title-md);  
+  font-weight: 700;
+}
+
+.signature .cards .card .price-month span{
+  color: var(--text-title);
+  font: var(--title-sx);  
+}
+
+.signature .cards .card .price-year span{
+  color: var(--text-title);
+  font: var(--body-sm);  
+  font-weight: 400;
+}
+
+.signature .cards .card .card-body{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.signature .cards .card .card-body ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.signature .cards .card .card-body ul li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.signature .cards .card .card-body ul li img{
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.signature .cards .card .card-body ul li span{
+  color: var(--text-body);
+  font: var(--body-xs);  
+  font-weight: 400;
+}
+
+.signature .cards .card .card-body .btn-card{
+  text-decoration: none;
+  font: var(--button);
+  font-weight: 700;
+  color: var(--text-title);
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-dark);
+  border-radius: 0.5rem;
+}
+
+.signature .cards .card.pink-dark .card-body .btn-card{
+  text-decoration: none;
+  font: var(--button);
+  font-weight: 700;
+  color: var(--text-title);
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pink-dark);
+  border-radius: 0.5rem;
+}
