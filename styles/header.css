@@ -3,11 +3,21 @@
 }
 
 .hero{
+  animation: ease-in-out 2s forwards fadeIn;
   background-image: url(../assets/hero-background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
+  opacity: 0;
+  padding-top: 118px;
+}
+
+header{
+  position: absolute;
+  height: 118px;
+  width: 100%;
+  z-index: 2;
 }
 
 header nav{
@@ -57,6 +67,9 @@ header a {
   font: var(--body-sm);
   color: var(--text-body);
   max-width: 20rem;
+  animation: ease-in-out 2s 0.5s forwards fadeIn;
+  opacity: 0;
+
 }
 
 
@@ -89,4 +102,11 @@ header a {
     max-width: 35.5rem;
   }
   
+}
+
+
+@keyframes fadeIn {
+  100%{
+    opacity: 1;
+  }
 }

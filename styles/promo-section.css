@@ -8,16 +8,28 @@
 
 .promo-section{
   max-width: 20rem;
+  margin-top: 20rem;
 }
 
 .promo-section span {
-  color: var(--text-body);
+  color: var(--text-label);
   font: var(--body-md);
+  animation-timeline: view(5%, 10%);
+  
+  animation-name: changeColorSpan;
+  animation-fill-mode: both;
+  animation-duration: 1s; 
+  animation-timing-function: linear;
 }
 
 .promo-section .highlight{
-  color: var(--blue-light);
+  color: var(--text-label);
   font: var(--body-md);
+  animation-timeline: view(10% 20%);
+  animation-name: changeColorHighlight;
+  animation-fill-mode: both;
+  animation-duration: 1s; 
+  animation-timing-function: linear;
 }
 
 
@@ -25,7 +37,15 @@
   width: 2.5rem;
   height: 2.5rem;
   position: absolute;
+
+  animation-timeline: view(10% 20%);
+  animation-name: changeIcons;
+  animation-fill-mode: both;
+  animation-duration: 1ms; 
+  animation-timing-function: linear;
+  opacity: 0;
 }
+
 
 .promo-section div:nth-child(2) img:nth-child(1) {
   top: -60px;
@@ -87,4 +107,42 @@
     rotate: -14deg;
   }
   
+}
+
+
+@keyframes changeColorSpan {
+  from{
+    color: var(--text-label);
+  }
+
+  to{
+    color: var(--text-body);
+  }
+}
+
+@keyframes changeColorHighlight {
+  from{
+    color: var(--text-label);
+  }
+
+  to{
+    color: var(--blue-light);
+  }
+}
+
+@keyframes changeIcons {
+  0%{
+   opacity: 0;
+   scale: 1;
+  }
+
+  50%{
+   opacity: 1;
+   scale: 1.2;
+  }
+
+  100%{
+   opacity: 1;
+   scale: 1;
+  }
 }

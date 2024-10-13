@@ -51,6 +51,7 @@
 body{
   background-color: var(--shape-background);
   color: var(--text-body);
+  position: relative;
 }
 
 @media (width >= 70em){
