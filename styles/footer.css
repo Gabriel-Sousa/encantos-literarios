@@ -69,3 +69,25 @@ footer ul li {
   color: var(--blue-light);
 }
 
+@media (width>= 70em){
+  footer .container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer .container .footer-header{
+    width: 16.5rem;
+    margin-top: 5.5rem;
+  }
+
+  footer .container .footer-header div,footer .container .footer-header img{
+    width: 100%;
+  }
+
+  footer .container .footer-body{
+    width: 19.5rem;
+    gap: 3.5rem;
+  }
+
+  
+}

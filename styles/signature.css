@@ -37,10 +37,34 @@
   justify-content: space-between;
 }
 
+.signature .cards .card .card-header > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signature .cards .card .card-header > div .tag-signature{
+  color: var(--text-body);
+
+  font: var(--tag);
+  font-weight: 700;
+  letter-spacing: 0.03125rem;
+  text-transform: uppercase;
+  background-color: var(--shape-stroke);
+  border-radius: 999px;
+  padding: 0.5rem 1.25rem;
+}
+
 .signature .cards .card h3{
   color: var(--blue-light);
   font: var(--title-sx);  
 }
+
+.signature .cards .card.pink-dark h3{
+  color: var(--pink-light);
+  font: var(--title-sx);  
+}
+
 
 .signature .cards .card .price-month{
   display: flex;
@@ -122,4 +146,44 @@
   justify-content: center;
   background-color: var(--pink-dark);
   border-radius: 0.5rem;
+}
+
+
+@media (width >= 70em){
+  .signature{
+    overflow: unset;
+  }
+  
+  .signature .cards{
+    overflow-x: unset;
+  }
+
+  .signature .signature-title h2{
+    font-size: 2rem;
+    color: var(--text-title);
+  }
+
+  .signature .cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+  }
+
+  .signature .cards .card:nth-child(1){
+    position: absolute;
+    transform: translate(-280px, 30px);
+    rotate: -8deg;
+  }
+
+  .signature .cards .card:nth-child(2){
+    position: relative;
+    z-index: 1;
+  }
+
+  .signature .cards .card:nth-child(3){
+    position: absolute;
+    transform: translate(280px, 30px);
+    rotate: 8deg;
+  }
 }
