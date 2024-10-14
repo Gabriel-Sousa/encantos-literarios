@@ -207,7 +207,7 @@
   z-index: 4;
   
 
-  animation-timeline: view(20% 0%);
+  animation-timeline: view(10% 0%);
   animation-name: span3;
   animation-fill-mode: forwards;
   animation-duration: 10s;
