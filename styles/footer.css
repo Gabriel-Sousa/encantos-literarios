@@ -44,6 +44,16 @@ footer .redes-sociais{
   margin-top: 0.5rem;
 }
 
+footer .redes-sociais svg{
+  transition: all ease-in-out 200ms;
+  cursor: pointer;
+}
+
+footer .redes-sociais svg:hover path{
+  fill: var(--text-body);
+  transition: all ease-in-out 200ms;
+}
+
 footer .footer-body{
   margin-top: 2.5rem;
   display: grid;
@@ -67,6 +77,13 @@ footer .footer-body ul{
 footer ul li {
   font: var(--link);
   color: var(--blue-light);
+  transition: all ease-in-out 100ms;
+  cursor: pointer;
+}
+
+footer ul li:hover {
+  color: var(--text-body);
+  transition: all ease-in-out 100ms;
 }
 
 @media (width>= 70em){

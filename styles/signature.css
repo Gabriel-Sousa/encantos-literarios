@@ -35,9 +35,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all ease-in-out 100ms;
 }
 
-.signature .cards .card .card-header > div{
+.signature .cards .card:hover{
+  background-color: var(--shape-hover);
+  transition: all ease-in-out 100ms;
+}
+
+.signature .cards .card .card-header div:nth-child(1){
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -132,6 +138,13 @@
   justify-content: center;
   background-color: var(--blue-dark);
   border-radius: 0.5rem;
+  transition: all ease-in-out 100ms;
+}
+
+
+.signature .cards .card .card-body .btn-card:hover{
+  background-color: var(--blue-base);
+  transition: all ease-in-out 100ms;
 }
 
 .signature .cards .card.pink-dark .card-body .btn-card{
@@ -146,6 +159,11 @@
   justify-content: center;
   background-color: var(--pink-dark);
   border-radius: 0.5rem;
+}
+
+.signature .cards .card.pink-dark .card-body .btn-card:hover{
+  background-color: var(--pink-base);
+  transition: all ease-in-out 100ms;
 }
 
 
@@ -170,10 +188,23 @@
     position: relative;
   }
 
+  .signature .cards .card:hover{
+    background-color: var(--shape-hover);
+    scale: 1.01;
+    z-index: 4;
+    transition: all ease-in-out 100ms;
+  }
+
   .signature .cards .card:nth-child(1){
     position: absolute;
-    transform: translate(-280px, 30px);
-    rotate: -8deg;
+    transform: translate(0);
+    rotate: 0deg;
+
+    animation-timeline: view(60% 0%);
+    animation-name: cardsRotate1;
+    animation-fill-mode: both;
+    animation-duration: 1s; 
+    animation-timing-function: linear;
   }
 
   .signature .cards .card:nth-child(2){
@@ -183,7 +214,27 @@
 
   .signature .cards .card:nth-child(3){
     position: absolute;
-    transform: translate(280px, 30px);
-    rotate: 8deg;
+    transform: translate(0);
+    rotate: 0deg;
+
+    animation-timeline: view(60% 0%);
+    animation-name: cardsRotate2;
+    animation-fill-mode: both;
+    animation-duration: 1s; 
+    animation-timing-function: linear;
+  }
+
+  @keyframes cardsRotate1 {
+    to{
+      transform: translate(-280px, 30px);
+      rotate: -8deg;
+    }
+  }
+
+  @keyframes cardsRotate2 {
+    to{
+      transform: translate(280px, 30px);
+      rotate: 8deg;
+    }
   }
 }

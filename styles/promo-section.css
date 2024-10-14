@@ -14,7 +14,26 @@
 .promo-section span {
   color: var(--text-label);
   font: var(--body-md);
-  animation-timeline: view(5%, 10%);
+}
+
+.promo-section span:nth-child(1){
+  animation-timeline: view(5% 10%);
+  
+  animation-name: changeColorSpan;
+  animation-fill-mode: both;
+  animation-duration: 1s; 
+  animation-timing-function: linear;
+}
+.promo-section span:nth-child(2){
+  animation-timeline: view(5% 10%);
+  
+  animation-name: changeColorSpan;
+  animation-fill-mode: both;
+  animation-duration: 1s; 
+  animation-timing-function: linear;
+}
+.promo-section span:nth-child(3){
+  animation-timeline: view(5% 10%);
   
   animation-name: changeColorSpan;
   animation-fill-mode: both;
@@ -26,6 +45,30 @@
   color: var(--text-label);
   font: var(--body-md);
   animation-timeline: view(10% 20%);
+  animation-name: changeColorHighlight;
+  animation-fill-mode: both;
+  animation-duration: 1s; 
+  animation-timing-function: linear;
+}
+
+.promo-section div .highlight-1{
+  animation-timeline: view(90% 0%);
+  animation-name: changeColorHighlight;
+  animation-fill-mode: both;
+  animation-duration: 1s; 
+  animation-timing-function: linear;
+}
+
+.promo-section div .highlight-2{
+  animation-timeline: view(70% 0%);
+  animation-name: changeColorHighlight;
+  animation-fill-mode: both;
+  animation-duration: 1s; 
+  animation-timing-function: linear;
+}
+
+.promo-section div .highlight-3{
+  animation-timeline: view(20% 0%);
   animation-name: changeColorHighlight;
   animation-fill-mode: both;
   animation-duration: 1s; 
@@ -47,24 +90,82 @@
 }
 
 
+
 .promo-section div:nth-child(2) img:nth-child(1) {
   top: -60px;
   right: 40px;
   rotate: 15deg;
+  transition: all 200ms ease-in-out;
 }
+
+.promo-section div:nth-child(2) img:nth-child(1):hover{
+  rotate: 30deg;
+  transition: all 200ms ease-in-out;
+}
+
 
 .promo-section div:nth-child(2) img:nth-child(2) {
   left: 0px;
   bottom: -40px;
   rotate: -70deg;
+  transition: all 200ms ease-in-out;
 }
+
+.promo-section div:nth-child(2) img:nth-child(2):hover{
+  rotate: -30deg;
+  transition: all 200ms ease-in-out;
+}
+
 
 .promo-section div:nth-child(2) img:nth-child(3) {
   bottom: -38px;
   right: 26px;
   rotate: 15deg;
+  transition: all 200ms ease-in-out;
 }
 
+.promo-section div:nth-child(2) img:nth-child(3):hover{
+  rotate: -30deg;
+  transition: all 200ms ease-in-out;
+}
+
+
+@keyframes changeColorSpan {
+  from{
+    color: var(--text-label);
+  }
+
+  to{
+    color: var(--text-body);
+  }
+}
+
+@keyframes changeColorHighlight {
+  from{
+    color: var(--text-label);
+  }
+
+  to{
+    color: var(--blue-light);
+  }
+}
+
+@keyframes changeIcons {
+  0%{
+   opacity: 0;
+   scale: 1;
+  }
+
+  50%{
+   opacity: 1;
+   scale: 1.2;
+  }
+
+  100%{
+   opacity: 1;
+   scale: 1;
+  }
+}
 
 
 @media (width >= 70em){
@@ -110,39 +211,3 @@
 }
 
 
-@keyframes changeColorSpan {
-  from{
-    color: var(--text-label);
-  }
-
-  to{
-    color: var(--text-body);
-  }
-}
-
-@keyframes changeColorHighlight {
-  from{
-    color: var(--text-label);
-  }
-
-  to{
-    color: var(--blue-light);
-  }
-}
-
-@keyframes changeIcons {
-  0%{
-   opacity: 0;
-   scale: 1;
-  }
-
-  50%{
-   opacity: 1;
-   scale: 1.2;
-  }
-
-  100%{
-   opacity: 1;
-   scale: 1;
-  }
-}

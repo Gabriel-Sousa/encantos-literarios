@@ -48,6 +48,10 @@
 
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: var(--shape-background);
   color: var(--text-body);

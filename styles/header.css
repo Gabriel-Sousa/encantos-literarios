@@ -44,6 +44,12 @@ header a {
   border-radius: 0.5rem;
   font: var(--button);
   color: var(--text-title);
+  transition: background-color 100ms ease-in-out ;
+}
+
+.btn-header:hover{
+  background-color: var(--pink-base);
+  transition: background-color 100ms ease-in-out ;
 }
 
 .hero section{

@@ -12,6 +12,7 @@
   justify-content: center;
   margin-top: 10rem;
   text-align: center;
+
 }
 
 .header-kit .title{
@@ -225,8 +226,9 @@
 
 @keyframes img2 {
   to{
-    transform: translate(100px,-56px);
-  rotate: 22deg;
+    /* transform: translate(100px,-56px); */
+    transform: translate(92px, -35px);
+    rotate: 18deg;
   }
 }
 
